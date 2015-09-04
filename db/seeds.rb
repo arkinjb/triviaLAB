@@ -10,21 +10,21 @@ Question.destroy_all
 Answer.destroy_all
 
 Question.create([
-  {name: "Question 1", body: "Name the two families in Romeo and Juliet?"},
-  {name: "Question 2", body: "What is converted into alcohol during brewing?"},
-  {name: "Question 3", body: "If cats are feline, what are sheep?"},
-  {name: "Question 4", body: "What does a numismatist study or collect?"},
-  {name: "Question 5", body: "How many gallons of beer are in a furkin?"},
-  {name: "Question 6", body: "Who had a 1985 hit with Saving All My Love For You?"},
-  {name: "Question 7", body: "What is Canada's national animal?"},
-  {name: "Question 8", body: ""},
-  {name: "Question 9", body: ""},
-  {name: "Question 10", body: ""},
-  {name: "Question 11", body: ""},
-  {name: "Question 12", body: ""},
-  {name: "Question 13", body: ""},
-  {name: "Question 14", body: ""},
-  {name: "Question 15", body: ""},
+  {title: "Question 1", body: "Name the two families in Romeo and Juliet?"},
+  {title: "Question 2", body: "What is converted into alcohol during brewing?"},
+  {title: "Question 3", body: "If cats are feline, what are sheep?"},
+  {title: "Question 4", body: "What does a numismatist study or collect?"},
+  {title: "Question 5", body: "How many gallons of beer are in a furkin?"},
+  {title: "Question 6", body: "Who had a 1985 hit with Saving All My Love For You?"},
+  {title: "Question 7", body: "What is Canada's national animal?"},
+  {title: "Question 8", body: ""},
+  {title: "Question 9", body: ""},
+  {title: "Question 10", body: ""},
+  {title: "Question 11", body: ""},
+  {title: "Question 12", body: ""},
+  {title: "Question 13", body: ""},
+  {title: "Question 14", body: ""},
+  {title: "Question 15", body: ""},
 ])
 
 Answer.create([
