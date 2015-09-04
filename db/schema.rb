@@ -17,18 +17,22 @@ ActiveRecord::Schema.define(version: 20150904153701) do
   enable_extension "plpgsql"
 
   create_table "answers", force: :cascade do |t|
-    t.string  "correct_answer"
-    t.string  "wrong_answer1"
-    t.string  "wrong_answer2"
-    t.string  "wrong_answer3"
-    t.integer "question_id"
+    t.string   "correct_answer"
+    t.string   "wrong_answer1"
+    t.string   "wrong_answer2"
+    t.string   "wrong_answer3"
+    t.integer  "question_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   add_index "answers", ["question_id"], name: "index_answers_on_question_id", using: :btree
 
   create_table "questions", force: :cascade do |t|
-    t.string "title"
-    t.string "body"
+    t.string   "title"
+    t.string   "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_foreign_key "answers", "questions"
