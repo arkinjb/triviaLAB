@@ -1,11 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-
 Answer.destroy_all
 Question.destroy_all
 
@@ -24,7 +16,7 @@ Question.create([
   {title: "Question 12", body: "Uxoricide is the killing of one's what?"},
   {title: "Question 13", body: "Mr Wopsle is a character in which Charles Dickens novel?"},
   {title: "Question 14", body: "What internationally popular competitive activity features a 'Racing Homer'?"},
-  {title: "Question 15", body: "What car company faced major problems over a sticking accelerator fault in 2010?"},
+  {title: "Question 15", body: "What car company faced major problems over a sticking accelerator fault in 2010?"}
 ])
 
 Answer.create([

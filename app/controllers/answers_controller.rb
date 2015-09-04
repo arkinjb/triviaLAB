@@ -1,7 +1,7 @@
 class AnswersController < ApplicationController
   def index
     @question = Question.find(params[:question_id])
-    @answers = @question.answers.order(:create_at)
+    @answers = @question.answers
 
     render json: @answers.to_json, status: :ok
   end
